@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "name": "Convergent Equivalence Benchmark Lab",
+    "shortName": "CEB-Lab",
+    "reportType": "Equivalence Benchmark Report",
+    "framework": "Convergent Equivalence Theory / Đồng Nghiệm Học"
+  },
+  "targetSolution": 270,
+  "expressions": [
+    {
+      "expression": "2 + 3",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "sqrt(25)",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "100 - 95",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "10 / 2",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "abs(-5)",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "factorial(3) - 1",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "15 / 3",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    },
+    {
+      "expression": "2^2 + 1",
+      "result": 5,
+      "valid": true,
+      "converges": false
+    }
+  ],
+  "metrics": {
+    "symbols": {
+      "targetSolution": "S",
+      "equivalentExpression": "E_i",
+      "transformationCost": "C_T",
+      "convergenceStability": "C_S",
+      "interpretabilityScore": "I_S",
+      "compressionGain": "C_G",
+      "reusabilityScore": "R_S",
+      "equivalenceDensity": "E_D",
+      "solutionPreservation": "S_P",
+      "globalConvergenceScore": "GS"
+    },
+    "rows": [
+      {
+        "index": 1,
+        "expression": "2 + 3",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 1,
+        "stability": 0.38,
+        "interpretability": 95,
+        "compression": 85,
+        "reusability": 83,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 2,
+        "expression": "sqrt(25)",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 2,
+        "stability": 0.38,
+        "interpretability": 85,
+        "compression": 76,
+        "reusability": 62,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 3,
+        "expression": "100 - 95",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 1,
+        "stability": 0.38,
+        "interpretability": 95,
+        "compression": 76,
+        "reusability": 83,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 4,
+        "expression": "10 / 2",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 1,
+        "stability": 0.38,
+        "interpretability": 95,
+        "compression": 82,
+        "reusability": 83,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 5,
+        "expression": "abs(-5)",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 3,
+        "stability": 0.38,
+        "interpretability": 80,
+        "compression": 79,
+        "reusability": 62,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 6,
+        "expression": "factorial(3) - 1",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 3.25,
+        "stability": 0.38,
+        "interpretability": 80,
+        "compression": 52,
+        "reusability": 62,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 7,
+        "expression": "15 / 3",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 1,
+        "stability": 0.38,
+        "interpretability": 95,
+        "compression": 82,
+        "reusability": 83,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      },
+      {
+        "index": 8,
+        "expression": "2^2 + 1",
+        "result": 5,
+        "valid": true,
+        "converges": false,
+        "cost": 2,
+        "stability": 0.38,
+        "interpretability": 90,
+        "compression": 79,
+        "reusability": 80,
+        "solutionPreservation": 0,
+        "notes": "Valid path; target not preserved"
+      }
+    ]
+  },
+  "aggregateMetrics": {
+    "target": 270,
+    "total": 8,
+    "valid": 8,
+    "convergent": 0,
+    "equivalenceDensity": 0,
+    "averageCost": 1.78,
+    "averageStability": 0.38,
+    "averageInterpretability": 89.38,
+    "averageCompression": 76.38,
+    "averageReusability": 74.75,
+    "averageSolutionPreservation": 0,
+    "globalScore": 27.11
+  },
+  "interpretation": "The observed equivalence space is sparse; convergence is computationally efficient under the current heuristic; the expressions remain highly human-interpretable; the benchmark indicates weak Convergent Equivalence behavior. This is benchmark evidence, not a general mathematical proof.",
+  "limitations": "This benchmark evaluates computational convergence behavior within a controlled expression environment. It does not claim to exhaust all mathematical equivalences or prove general equivalence theory.",
+  "timestamp": "2026-06-18T21:43:25.494Z",
+  "version": "1.0.0"
+}
