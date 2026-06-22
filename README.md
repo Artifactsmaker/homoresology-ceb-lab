@@ -1,6 +1,5 @@
-# Homoresology Framework
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)# Homoresology Framework
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 A Computational Framework for Outcome Equivalence Across Heterogeneous Trajectories
 
 ## Overview
